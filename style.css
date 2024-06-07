@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+
+}
+.navbar{
+    width:90%;
+    margin:auto;
+    padding:5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-sec{
+    display:flex;
+    align-items: center;
+}
+ .logo-sec .logo-png{
+    width: 100px;
+    cursor: pointer;
+}
+ .logo-sec .logo-text{
+    font-size:50px;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+    color: white;
+    transition: 0.3s;
+    
+}
+.logo-sec .logo-text:hover{
+    font-size:52px ;
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin:5px ;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px;
+    transition: 0.3s;
+
+}
+.navbar ul li a:hover{
+    font-size: 18px;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width:0%;
+    background: #009688;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+   
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    margin: 10px;
+    font-family: "Caveat", cursive;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 5px;
+    display: inline;
+ 
+}
+.content h1:hover{
+    background-color:  #009688 ;
+    border-radius: 10px;
+
+}
+.content p{
+    font-family: "Platypi", serif;
+    font-size: 20px;
+    margin: 3px;
+    
+}
+button{
+    width: 200px;
+    padding:15px ;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    margin-top: 45px;
+    margin-left: 10px;
+    font-weight: bold;
+    border: 1px solid #009688;
+    cursor: pointer;
+    position: relative;
+}
+span{
+
+    background: #009688;
+    position: absolute;
+    height: 100%;
+    width:0%;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+    border:0;
+}
+button:hover{
+     border: none;
+}
+
+
+    
